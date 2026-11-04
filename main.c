@@ -3,57 +3,57 @@
 //maker of project: Hurricane-Q7
 #define _CRT_SECURE_NO_WARNINGS
 #include<stdio.h>
+#include"add_book.h"
 #include"Book_Struct_Infomation.h"
+#include"show_Books.h"
 //枚举变量定义，提升代码的可读性。
 typedef enum {
 	ADD = 1,
 	FIND,
-	INSERT,
-	DELETE,
+	DEL,//这里写DELETE会报错，因为和<windows.h>里面的冲突了
 	MODIFY,
 	SORT,
 	COUNT_BOOK,
-	EXIT
+	SHOW_BOOKS,
+	EXIT_SYS
+	
 }MenuOpt;
 void showMenu()
 {
 	printf("*****#*****#*****#*****\n");
 	printf("1. ADD\n");
 	printf("2. FIND\n");
-	printf("3. INSERT\n");
-	printf("4. DELETE\n");
-	printf("5. MODIFY\n");
-	printf("6. SORT\n");
-	printf("7. COUNT_BOOK\n");
-	printf("8. EXIT\n");
+	printf("3. DEL\n");
+	printf("4. MODIFY\n");
+	printf("5. SORT\n");
+	printf("6. COUNT_BOOK\n");
+	printf("7. SHOW_BOOKS\n");
+	printf("8. EXIT_SYS\n");
 	printf("*****#*****#*****#*****\n");
 }
 int main()
 {
-	Bms bms;
+	struct Bms bms;
 	bms.book_Count = 0;//初始为零。
 	MenuOpt opt; //接收用户的选项
-	showMenu();
 	printf("Bms:欢迎使用图书管理系统！\n");
 	while (1)
 	{
+		showMenu();
 		printf("Bms:请输入选项:>");
 		scanf("%d", &opt);
 		switch (opt)
 		{
 		case ADD:
 		{
+			addBook(&bms);
 			//添加书本
 		}break;
 		case FIND:
 		{
 			//查找书本信息
 		}break;
-		case INSERT:
-		{
-			//插入书本信息
-		}break;
-		case DELETE:
+		case DEL:
 		{
 			//删除书本信息
 		}break;
@@ -69,14 +69,22 @@ int main()
 		{
 			//统计书本的数量
 		}break;
-		case EXIT:
+		case SHOW_BOOKS:
+		{
+			showAllBooks(&bms);
+		}break;
+		case EXIT_SYS:
 		{
 			//退出程序
 			printf("Bms:《Book Mangement System》程序已退出，欢迎下次再次使用！\n");
 			return;
 		}
 		default:
+		{
 			printf("Bms:输入错误，请重新输入！\n");
+			system("pause");
+			system("cls");
+		}
 		}
 	}
 	return 0;

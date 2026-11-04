@@ -1,14 +1,14 @@
 #pragma once
 #define MAX_SIZE 1000
-//æœ¬é¡¹ç›®ä¸€äº›ç›¸å…³çš„ç»“æ„ä½“å®šä¹‰
+//¹ØÓÚÍ¼Êé¹ÜÀíÏµÍ³µÄÒ»Ğ©Ïà¹ØµÄ½á¹¹Ìå¶¨Òå
 struct Book
 {
 	char ISBN[50];
 	char bookName[50];
 	int bookPrices;
 };
-typedef struct Bms
+struct Bms 
 {
 	struct Book book[MAX_SIZE];
 	int book_Count;
-}Bms;
+};

@@ -18,9 +18,21 @@
     <ClCompile Include="main.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="add_book.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="show_Books.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Book_Struct_Infomation.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="add_book.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="show_Books.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

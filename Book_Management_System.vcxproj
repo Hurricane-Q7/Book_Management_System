@@ -139,10 +139,14 @@
     </Manifest>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="add_book.c" />
     <ClCompile Include="main.c" />
+    <ClCompile Include="show_Books.c" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="add_book.h" />
     <ClInclude Include="Book_Struct_Infomation.h" />
+    <ClInclude Include="show_Books.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

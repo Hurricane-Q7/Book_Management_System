@@ -3,5 +3,5 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="Book_Management_System.vcxproj" />
+  <Project Path="Book_Management_System.vcxproj" Id="5ecfa81b-2f58-44c8-9931-8e5230b1eb43" />
 </Solution>

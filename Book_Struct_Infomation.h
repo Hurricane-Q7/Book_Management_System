@@ -3,7 +3,7 @@
 //关于图书管理系统的一些相关的结构体定义
 struct Book
 {
-	char ISBN[50];
+	char ISBN[14];//国际标准书号，每一本书的身份证号，一般是13位
 	char bookName[50];
 	int bookPrices;
 };

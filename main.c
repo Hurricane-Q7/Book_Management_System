@@ -6,6 +6,7 @@
 #include"add_book.h"
 #include"Book_Struct_Infomation.h"
 #include"show_Books.h"
+#include"find_book.h"
 //枚举变量定义，提升代码的可读性。
 typedef enum {
 	ADD = 1,
@@ -34,7 +35,7 @@ void showMenu()
 int main()
 {
 	struct Bms bms;
-	bms.book_Count = 0;//初始为零。
+	bms.book_Count = 0;
 	MenuOpt opt; //接收用户的选项
 	printf("Bms:欢迎使用图书管理系统！\n");
 	while (1)
@@ -51,10 +52,15 @@ int main()
 		}break;
 		case FIND:
 		{
+			printf("Bms:请输入你要查找书本的ISBN号：");
+			char isbn[14];
+			scanf("%s",isbn);
+			findBook(&bms,isbn);
 			//查找书本信息
 		}break;
 		case DEL:
 		{
+
 			//删除书本信息
 		}break;
 		case MODIFY:

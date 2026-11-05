@@ -10,11 +10,15 @@ void showAllBooks(struct Bms * bms)
 	}
     //正式打印部分
 	int index_Of_Book = 0;
+	printf("%-15s %-30s %10s\n", "ISBN", "书名", "定价");
+	printf("------------------------------------------------------------\n");
+
 	for (index_Of_Book = 0; index_Of_Book < bms->book_Count; index_Of_Book++)
 	{
-		printf("ISBN                 书名                     定价\n");
-		printf("%s                    %s                      %d\n",
-		bms->book[index_Of_Book].ISBN, bms->book[index_Of_Book].bookName, bms->book[index_Of_Book].bookPrices);
+		printf("%-15s %-30s %10d元\n",
+			bms->book[index_Of_Book].ISBN,
+			bms->book[index_Of_Book].bookName,
+			bms->book[index_Of_Book].bookPrices);
 	}
 
 	system("pause");

@@ -27,6 +27,12 @@
     <ClCompile Include="find_book.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="delete_book.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="modifyBook.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Book_Struct_Infomation.h">
@@ -39,6 +45,12 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="find_book.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="delete_book.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="modifyBook.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

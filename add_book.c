@@ -11,15 +11,15 @@ void addBook(struct Bms * bms)
 		system("cls");
 		return;
 	}
-	printf("请输入书的ISBN编号:");
+	printf("Bms:请输入书的ISBN编号:");
 	scanf("%s", bms->book[bms->book_Count].ISBN);
 	//隐患：`%s` 不做长度保护，输入太长会数组溢出，后面优化可以改成 `%19s` 这种限制长度。（等待优化ing）
-	printf("请输入书的名字:");
+	printf("Bms:请输入书的名字:");
 	scanf("%s", bms->book[bms->book_Count].bookName);
 
-	printf("请输入书的价格:");
+	printf("Bms:请输入书的价格:");
 	scanf("%d", &(bms->book[bms->book_Count].bookPrices));
-	printf("添加成功！\n");
+	printf("Bms:添加成功！\n");
 	bms->book_Count++;
 	system("pause");
 	system("cls");

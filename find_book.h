@@ -3,5 +3,5 @@
 #include"Book_Struct_Infomation.h"
 #include"windows.h"
 #include"string.h"
-int isExit(struct Bms* bms, char isbn[]);
+int findByIsbn(struct Bms* bms, char isbn[]);
 void findBook(struct Bms* bms, char isbn[]);

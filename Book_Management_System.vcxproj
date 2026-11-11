@@ -140,6 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="add_book.c" />
+    <ClCompile Include="book_sort.c" />
     <ClCompile Include="delete_book.c" />
     <ClCompile Include="find_book.c" />
     <ClCompile Include="main.c" />
@@ -153,6 +154,7 @@
     <ClInclude Include="find_book.h" />
     <ClInclude Include="modifyBook.h" />
     <ClInclude Include="show_Books.h" />
+    <ClInclude Include="sort_book.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

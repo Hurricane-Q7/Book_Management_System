@@ -9,6 +9,7 @@
 #include"find_book.h"
 #include"delete_book.h"
 #include"modifyBook.h"
+#include"sort_book.h"
 //定义枚举变量，提升代码的可读性。
 typedef enum {
 	ADD = 1,
@@ -78,8 +79,7 @@ int main()
 		}break;
 		case SORT:
 		{
-
-			//排序书本信息
+			sortBook(&bms);
 		}break;
 		case COUNT_BOOK:
 		{
